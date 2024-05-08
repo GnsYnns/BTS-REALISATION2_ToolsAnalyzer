@@ -12,7 +12,7 @@ L'interface utilisateur a été conçue en utilisant WPF (Windows Presentation F
 
 ## Développement
 
-Le développement a été réalisé en C#, avec une attention particulière portée à la logique métier et à la manipulation des données. Les fonctionnalités principales incluent le calcul des statistiques clés (comme l’armure, les dégâts, etc.) sur des personnages de LoL déjà intégrés dans l'application. Des fonctionnalités de recherche, de filtrage, et d'exportation des données ont également été implémentées.
+Le développement a été réalisé en C#, avec une attention particulière portée à la logique métier et à la manipulation des données. Les fonctionnalités principales incluent le calcul des statistiques clés (comme l’armure, les dégâts, etc.) sur des personnages de LoL déjà intégrés dans l'application. Des fonctionnalités de recherche et de filtrage ont également été implémentées.
 
 ## Tests
 
