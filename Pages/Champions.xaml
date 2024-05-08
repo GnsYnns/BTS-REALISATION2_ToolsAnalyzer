@@ -1,0 +1,323 @@
+﻿<Page x:Class="ToolsAnalyzer.Pages.Champions"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ToolsAnalyzer.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="790" d:DesignWidth="843"
+      Title="Champions">
+
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--// Display //-->
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="3*"/>
+            </Grid.RowDefinitions>
+            <!--// Description //-->
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="6*"/>
+                </Grid.ColumnDefinitions>
+                <Ellipse Width="150" 
+                         Height="140" 
+                         HorizontalAlignment="Center" 
+                         Grid.Column="0">
+                    <Ellipse.Fill>
+                        <ImageBrush x:Name="championIcone" ImageSource="pack://application:,,,/Assets\Img\Logo.png" />
+                    </Ellipse.Fill>
+                    <Ellipse.Stroke>
+                        <SolidColorBrush Color="#C8AA6E" />
+                    </Ellipse.Stroke>
+                    <Ellipse.StrokeThickness>1</Ellipse.StrokeThickness>
+                </Ellipse>
+                <TextBlock Grid.Column="2" 
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Left"
+                           FontFamily="Roboto"
+                           FontWeight="ExtraBold"
+                           FontSize="31"
+                           Foreground="#C8AA6E"
+                           x:Name="championName"> 
+                    League of Legend
+                </TextBlock>
+            </Grid>
+            
+            <!--// Statistic Menu //-->
+            <Grid Grid.Row="1">
+                <!--// Présentation champions + selecteur level //-->
+                <Grid x:Name="Statistiques" Grid.Row="1" Grid.Column="0" Margin="5 5 5 5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="6*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="9*"/>
+                    </Grid.RowDefinitions>
+                    
+                    <!--// Statistiques //-->
+                    <Label Foreground="#C8AA6E" 
+                           Grid.Column="0"
+                           Grid.Row="0"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Top"
+                           FontSize="20"
+                           FontWeight="ExtraBold">Statistiques</Label>
+                    
+                    <!--// Combobox level //-->
+                    <StackPanel  Grid.Column="1" Grid.Row="0">
+                        <ComboBox Name="levelSelector"
+                                  Text="Niveau (1-18)"
+                                  IsEditable="true"
+                                  IsReadOnly="true"
+                                  SelectionChanged="levelSelector_SelectionChanged"
+                                  SelectedItem="1"/>    
+                        <TextBlock Text="{Binding ElementName=comboBox1, Path=SelectedItem}"/>
+                    </StackPanel>
+
+                    <!--// Box statistique //-->
+                    <Grid Grid.ColumnSpan="2" Grid.Row="2" >
+                        <!--// Tableau de statistiques //-->
+                        <Border BorderBrush="#C8AA6E" BorderThickness="1" Grid.Row="1">
+                            <Grid>
+                                <!--// Propriétés //-->
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="1*"/>
+                                </Grid.RowDefinitions>
+
+                                <!--// Health //-->
+                                <Border BorderBrush="#C8AA6E" BorderThickness="1" Grid.Column="0" Grid.Row="0">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="1*"/>
+                                            <RowDefinition Height="1*"/>
+                                        </Grid.RowDefinitions>
+                                        <Label Foreground="#C8AA6E" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">Health</Label>
+                                        <Label Foreground="#C8AA6E" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="labelHealth">0</Label>
+                                    </Grid>
+                                </Border>
+                                <!--// Ressources //-->
+                                <Border BorderBrush="#C8AA6E" BorderThickness="1" Grid.Column="1" Grid.Row="0">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="1*"/>
+                                            <RowDefinition Height="1*"/>
+                                        </Grid.RowDefinitions>
+                                        <Label Foreground="#C8AA6E" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">Ressources</Label>
+                                        <Label Foreground="#C8AA6E" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="labelMana">0</Label>
+                                    </Grid>
+                                </Border>
+
+                                <!--// Health regen. //-->
+                                <Border BorderBrush="#C8AA6E" BorderThickness="1" Grid.Column="0" Grid.Row="1">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="1*"/>
+                                            <RowDefinition Height="1*"/>
+                                        </Grid.RowDefinitions>
+                                        <Label Foreground="#C8AA6E" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">Health regen.</Label>
+                                        <Label Foreground="#C8AA6E" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="labelHealthRegen">0</Label>
+                                    </Grid>
+                                </Border>
+
+                                <!--// Ressources regen. //-->
+                                <Border BorderBrush="#C8AA6E" BorderThickness="1" Grid.Column="1" Grid.Row="1">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="1*"/>
+                                            <RowDefinition Height="1*"/>
+                                        </Grid.RowDefinitions>
+                                        <Label Foreground="#C8AA6E" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">Ressources regen.</Label>
+                                        <Label Foreground="#C8AA6E" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="labelManaRegen">0</Label>
+                                    </Grid>
+                                </Border>
+
+                                <!--// Armor //-->
+                                <Border BorderBrush="#C8AA6E" BorderThickness="1" Grid.Column="0" Grid.Row="2">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="1*"/>
+                                            <RowDefinition Height="1*"/>
+                                        </Grid.RowDefinitions>
+                                        <Label Foreground="#C8AA6E" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">Armor</Label>
+                                        <Label Foreground="#C8AA6E" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="labelAR">0</Label>
+                                    </Grid>
+                                </Border>
+
+                                <!--// Attack damage //-->
+                                <Border BorderBrush="#C8AA6E" BorderThickness="1" Grid.Column="1" Grid.Row="2">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="1*"/>
+                                            <RowDefinition Height="1*"/>
+                                        </Grid.RowDefinitions>
+                                        <Label Foreground="#C8AA6E" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">Attack damage</Label>
+                                        <Label Foreground="#C8AA6E" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="labelAD">0</Label>
+                                    </Grid>
+                                </Border>
+
+                                <!--// Magic resist. //-->
+                                <Border BorderBrush="#C8AA6E" BorderThickness="1" Grid.Column="0" Grid.Row="3">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="1*"/>
+                                            <RowDefinition Height="1*"/>
+                                        </Grid.RowDefinitions>
+                                        <Label Foreground="#C8AA6E" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">Magic resist.</Label>
+                                        <Label Foreground="#C8AA6E" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="labelMR">0</Label>
+                                    </Grid>
+                                </Border>
+
+                                <!--// Crit. Damage //-->
+                                <Border BorderBrush="#C8AA6E" BorderThickness="1" Grid.Column="1" Grid.Row="3">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="1*"/>
+                                            <RowDefinition Height="1*"/>
+                                        </Grid.RowDefinitions>
+                                        <Label Foreground="#C8AA6E" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">Crit. Damage</Label>
+                                        <Label Foreground="#C8AA6E" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="labelCrit">0</Label>
+                                    </Grid>
+                                </Border>
+
+                                <!--// Movement speed //-->
+                                <Border BorderBrush="#C8AA6E" BorderThickness="1" Grid.Column="0" Grid.Row="4">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="1*"/>
+                                            <RowDefinition Height="1*"/>
+                                        </Grid.RowDefinitions>
+                                        <Label Foreground="#C8AA6E" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">Movement speed</Label>
+                                        <Label Foreground="#C8AA6E" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="labelMS">0</Label>
+                                    </Grid>
+                                </Border>
+
+                                <!--// Attack range //-->
+                                <Border BorderBrush="#C8AA6E" BorderThickness="1" Grid.Column="1" Grid.Row="4">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="1*"/>
+                                            <RowDefinition Height="1*"/>
+                                        </Grid.RowDefinitions>
+                                        <Label Foreground="#C8AA6E" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">Attack range</Label>
+                                        <Label Foreground="#C8AA6E" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="labelRange">0</Label>
+                                    </Grid>
+                                </Border>
+
+                                <!--// Base AS //-->
+                                <Border BorderBrush="#C8AA6E" BorderThickness="1" Grid.Column="0" Grid.Row="5">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="1*"/>
+                                            <RowDefinition Height="1*"/>
+                                        </Grid.RowDefinitions>
+                                        <Label Foreground="#C8AA6E" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">Base AS</Label>
+                                        <Label Foreground="#C8AA6E" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="labelBaseAS">0</Label>
+                                    </Grid>
+                                </Border>
+
+                                <!--// Bonus AS //-->
+                                <Border BorderBrush="#C8AA6E" BorderThickness="1"  Grid.Column="1" Grid.Row="5">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="1*"/>
+                                            <RowDefinition Height="1*"/>
+                                        </Grid.RowDefinitions>
+                                        <Label Foreground="#C8AA6E" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">Bonus AS</Label>
+                                        <Label Foreground="#C8AA6E" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="labelBonAS">0</Label>
+                                    </Grid>
+                                </Border>
+
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
+        
+        
+        <Grid Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="7*"/>
+            </Grid.ColumnDefinitions>
+            <!--// Selector Menu //-->
+            <Grid x:Name="Selecteur" Grid.Column="1">
+                <Grid Margin="0,60,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <!--// Selecteur de champions //-->
+                    <ListBox x:Name="selectorChamp" 
+                            ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                            BorderThickness="0"
+                            HorizontalContentAlignment="Center"
+                            SelectionChanged="loadStatistic_SelectionChanged" Grid.Row="1" Background="#091438">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Ellipse Margin="5,5,5,5" 
+                                         Width="{Binding ActualWidth, ElementName=selectorChamp, Converter={StaticResource ThreeQuartersConverter}}"
+                                         Height="{Binding ActualWidth, ElementName=selectorChamp, Converter={StaticResource ThreeQuartersConverter}}"
+                                         HorizontalAlignment="Center" Grid.Column="0">
+                                    <Ellipse.Fill>
+                                        <ImageBrush ImageSource="{Binding IconFull}"/>
+                                    </Ellipse.Fill>
+                                    <Ellipse.Stroke>
+                                        <SolidColorBrush Color="#C8AA6E" />
+                                    </Ellipse.Stroke>
+                                    <Ellipse.StrokeThickness>1</Ellipse.StrokeThickness>
+                                </Ellipse>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                        <ListBox.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel IsItemsHost="True" Orientation="Horizontal" />
+                            </ItemsPanelTemplate>
+                        </ListBox.ItemsPanel>
+                    </ListBox>
+                </Grid>
+            </Grid>
+            
+            <!--// Borderline //-->
+            <Grid Grid.Column="0">
+                <Rectangle Width="12" HorizontalAlignment="Left" Margin="5,0,0,0">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                            <GradientStop Color="#CCAE73" Offset="0.0" />
+                            <GradientStop Color="#CCAE73" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+
+                <Rectangle Width="1" HorizontalAlignment="left" VerticalAlignment="Stretch">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                            <GradientStop Color="#CCAE73" Offset="0.0" />
+                            <GradientStop Color="#CCAE73" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+            </Grid>
+            
+        </Grid>
+    </Grid>
+</Page>

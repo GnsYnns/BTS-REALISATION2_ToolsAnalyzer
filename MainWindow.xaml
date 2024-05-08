@@ -1,0 +1,178 @@
+﻿<Window x:Class="ToolsAnalyzer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToolsAnalyzer"
+        mc:Ignorable="d"
+        Title="Tool Analyzer" Height="790" Width="1145"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="#091438">
+        <!--// Frame //-->
+        <Frame Source="/Pages/Menu.xaml" NavigationUIVisibility="Hidden" Name="frameapp" Margin="302,0,0,0" />
+
+        <!--// Menu Panel //-->
+
+        <StackPanel Background="#091438"
+            Width="290"
+            Orientation="Vertical"
+            HorizontalAlignment="Left">
+
+            <!--// Channel Name //-->
+
+            <Grid Height="50" VerticalAlignment="Top" Margin="0,30,0,0">
+                <TextBlock Text="TOOL ANALYZER"
+                   Foreground="#C8AA6E"
+                   FontFamily="Roboto"
+                   FontSize="31"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   FontWeight="ExtraBold"/>
+            </Grid>
+            
+            <Menu Height="500"
+                  Background="Transparent"
+                  VerticalAlignment="Top"
+                  Margin="0,100,0,0">
+
+                <Menu.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <VirtualizingStackPanel Orientation="Vertical" />
+                    </ItemsPanelTemplate>
+                </Menu.ItemsPanel>
+
+                <!--// Main Menu - Home //-->
+
+                <MenuItem Header="HOME"
+                          Template="{StaticResource Menu_Template}"
+                          Click="FrameNavigate"
+                          Tag ="/Pages/Menu.xaml">
+                    <MenuItem.Icon>
+                        <Image Source="Assets/Img/home.png"
+                                Stretch="UniformToFill" />
+                    </MenuItem.Icon>
+
+                </MenuItem>
+
+                <!--// Main Menu - Champions //-->
+
+                <MenuItem Header="CHAMPIONS"
+                          Template="{StaticResource Menu_Template}"
+                          Click="FrameNavigate"
+                          Tag ="/Pages/Champions.xaml">
+                    <MenuItem.Icon>
+                        <Image Source="Assets/Img/lol.png"
+                                Stretch="Uniform" />
+                    </MenuItem.Icon>
+                </MenuItem>
+
+                <!--// Main Menu - Items //-->
+
+                <MenuItem Header="ITEMS"
+                          Template="{StaticResource Menu_Template}"
+                          Click="FrameNavigate"
+                          Tag ="/Pages/Items.xaml">
+                    <MenuItem.Icon>
+                        <Image Source="Assets/Img/sword.png"
+                                Stretch="UniformToFill" />
+                    </MenuItem.Icon>
+
+                </MenuItem>
+
+                <!--// Main Menu - Build //-->
+                <!--
+                <MenuItem Header="CHAMPION BUILD"
+                          Template="{StaticResource Menu_Template}"
+                          Click="FrameNavigate"
+                          Tag ="/Pages/Build.xaml">
+                    <MenuItem.Icon>
+                        <Image Source="Assets/Img/Settings.png"
+                                Stretch="UniformToFill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                //-->
+
+
+                <!--// Main Menu - About //-->
+
+                <MenuItem Header="ABOUT"
+                          Template="{StaticResource Menu_Template}"
+                          Click="FrameNavigate"
+                          Tag ="/Pages/About.xaml">
+                    <MenuItem.Icon>
+                        <Image Source="Assets/Img/about.png"
+                                Stretch="UniformToFill" />
+                    </MenuItem.Icon>
+
+                </MenuItem>
+
+                <!--// Main Menu - Exit //-->
+
+                <MenuItem Header="EXIT"
+                          Template="{StaticResource Menu_Template}"
+                          Click="CloseBtn_Click">
+                    <MenuItem.Icon>
+                        <Image Source="Assets/Img/exit.png"
+                                Stretch="UniformToFill" />
+                    </MenuItem.Icon>
+                </MenuItem>
+
+            </Menu>
+
+            <!--// Main Menu //-->
+
+        </StackPanel>
+
+        <!--// Borderline //-->
+        <Rectangle Width="12" HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="290,0,0,0">
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="#CCAE73" Offset="0.0" />
+                    <GradientStop Color="#CCAE73" Offset="1.0" />
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <Rectangle Width="1" HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="284,0,0,0">
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="#CCAE73" Offset="0.0" />
+                    <GradientStop Color="#CCAE73" Offset="1.0" />
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <!--// Maximize / Minimize App //-->
+
+        <Button x:Name="MaxBtn"
+        Style="{StaticResource MaxBtnStyle}"
+        Click="MaxBtn_Click" />
+
+        <!--// Close App //-->
+
+        <Button x:Name="CloseBtn"
+        Style="{StaticResource CloseBtnStyle}"
+        Click="CloseBtn_Click" />
+
+        <!--// Copy  //-->
+        <TextBlock Text="Created by GnsYnns"
+                    Foreground="#C8AA6E"
+                    FontFamily="Roboto"
+                    FontSize="10"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Left"
+                    Margin="10,0,0,10"/>
+
+        <Border Background="#C8AA6E"
+                    Height="15"
+                    CornerRadius="0,3,3,0"
+                    Width="5"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Left"
+                    Margin="0,0,0,8" />
+
+            
+    </Grid>
+</Window>

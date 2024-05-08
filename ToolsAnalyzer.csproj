@@ -1,0 +1,3005 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Champions\Aatrox.png" />
+    <None Remove="Assets\Champions\Ahri.png" />
+    <None Remove="Assets\Champions\Akali.png" />
+    <None Remove="Assets\Champions\Akshan.png" />
+    <None Remove="Assets\Champions\Alistar.png" />
+    <None Remove="Assets\Champions\Amumu.png" />
+    <None Remove="Assets\Champions\Anivia.png" />
+    <None Remove="Assets\Champions\Annie.png" />
+    <None Remove="Assets\Champions\Aphelios.png" />
+    <None Remove="Assets\Champions\Ashe.png" />
+    <None Remove="Assets\Champions\AurelionSol.png" />
+    <None Remove="Assets\Champions\Azir.png" />
+    <None Remove="Assets\Champions\Bard.png" />
+    <None Remove="Assets\Champions\Belveth.png" />
+    <None Remove="Assets\Champions\Blitzcrank.png" />
+    <None Remove="Assets\Champions\Brand.png" />
+    <None Remove="Assets\Champions\Braum.png" />
+    <None Remove="Assets\Champions\Briar.png" />
+    <None Remove="Assets\Champions\Caitlyn.png" />
+    <None Remove="Assets\Champions\Camille.png" />
+    <None Remove="Assets\Champions\Cassiopeia.png" />
+    <None Remove="Assets\Champions\Chogath.png" />
+    <None Remove="Assets\Champions\Corki.png" />
+    <None Remove="Assets\Champions\Darius.png" />
+    <None Remove="Assets\Champions\Diana.png" />
+    <None Remove="Assets\Champions\Draven.png" />
+    <None Remove="Assets\Champions\DrMundo.png" />
+    <None Remove="Assets\Champions\Ekko.png" />
+    <None Remove="Assets\Champions\Elise.png" />
+    <None Remove="Assets\Champions\Evelynn.png" />
+    <None Remove="Assets\Champions\Ezreal.png" />
+    <None Remove="Assets\Champions\Fiddlesticks.png" />
+    <None Remove="Assets\Champions\Fiora.png" />
+    <None Remove="Assets\Champions\Fizz.png" />
+    <None Remove="Assets\Champions\Galio.png" />
+    <None Remove="Assets\Champions\Gangplank.png" />
+    <None Remove="Assets\Champions\Garen.png" />
+    <None Remove="Assets\Champions\Gnar.png" />
+    <None Remove="Assets\Champions\Gragas.png" />
+    <None Remove="Assets\Champions\Graves.png" />
+    <None Remove="Assets\Champions\Gwen.png" />
+    <None Remove="Assets\Champions\Hecarim.png" />
+    <None Remove="Assets\Champions\Heimerdinger.png" />
+    <None Remove="Assets\Champions\Hwei.png" />
+    <None Remove="Assets\Champions\Illaoi.png" />
+    <None Remove="Assets\Champions\Irelia.png" />
+    <None Remove="Assets\Champions\Ivern.png" />
+    <None Remove="Assets\Champions\Janna.png" />
+    <None Remove="Assets\Champions\JarvanIV.png" />
+    <None Remove="Assets\Champions\Jax.png" />
+    <None Remove="Assets\Champions\Jayce.png" />
+    <None Remove="Assets\Champions\Jhin.png" />
+    <None Remove="Assets\Champions\Jinx.png" />
+    <None Remove="Assets\Champions\Kaisa.png" />
+    <None Remove="Assets\Champions\Kalista.png" />
+    <None Remove="Assets\Champions\Karma.png" />
+    <None Remove="Assets\Champions\Karthus.png" />
+    <None Remove="Assets\Champions\Kassadin.png" />
+    <None Remove="Assets\Champions\Katarina.png" />
+    <None Remove="Assets\Champions\Kayle.png" />
+    <None Remove="Assets\Champions\Kayn.png" />
+    <None Remove="Assets\Champions\Kennen.png" />
+    <None Remove="Assets\Champions\Khazix.png" />
+    <None Remove="Assets\Champions\Kindred.png" />
+    <None Remove="Assets\Champions\Kled.png" />
+    <None Remove="Assets\Champions\KogMaw.png" />
+    <None Remove="Assets\Champions\KSante.png" />
+    <None Remove="Assets\Champions\Leblanc.png" />
+    <None Remove="Assets\Champions\LeeSin.png" />
+    <None Remove="Assets\Champions\Leona.png" />
+    <None Remove="Assets\Champions\Lillia.png" />
+    <None Remove="Assets\Champions\Lissandra.png" />
+    <None Remove="Assets\Champions\Lucian.png" />
+    <None Remove="Assets\Champions\Lulu.png" />
+    <None Remove="Assets\Champions\Lux.png" />
+    <None Remove="Assets\Champions\Malphite.png" />
+    <None Remove="Assets\Champions\Malzahar.png" />
+    <None Remove="Assets\Champions\Maokai.png" />
+    <None Remove="Assets\Champions\MasterYi.png" />
+    <None Remove="Assets\Champions\Milio.png" />
+    <None Remove="Assets\Champions\MissFortune.png" />
+    <None Remove="Assets\Champions\MonkeyKing.png" />
+    <None Remove="Assets\Champions\Mordekaiser.png" />
+    <None Remove="Assets\Champions\Morgana.png" />
+    <None Remove="Assets\Champions\Naafiri.png" />
+    <None Remove="Assets\Champions\Nami.png" />
+    <None Remove="Assets\Champions\Nasus.png" />
+    <None Remove="Assets\Champions\Nautilus.png" />
+    <None Remove="Assets\Champions\Neeko.png" />
+    <None Remove="Assets\Champions\Nidalee.png" />
+    <None Remove="Assets\Champions\Nilah.png" />
+    <None Remove="Assets\Champions\Nocturne.png" />
+    <None Remove="Assets\Champions\Nunu.png" />
+    <None Remove="Assets\Champions\Olaf.png" />
+    <None Remove="Assets\Champions\Orianna.png" />
+    <None Remove="Assets\Champions\Ornn.png" />
+    <None Remove="Assets\Champions\Pantheon.png" />
+    <None Remove="Assets\Champions\Poppy.png" />
+    <None Remove="Assets\Champions\Pyke.png" />
+    <None Remove="Assets\Champions\Qiyana.png" />
+    <None Remove="Assets\Champions\Quinn.png" />
+    <None Remove="Assets\Champions\Rakan.png" />
+    <None Remove="Assets\Champions\Rammus.png" />
+    <None Remove="Assets\Champions\RekSai.png" />
+    <None Remove="Assets\Champions\Rell.png" />
+    <None Remove="Assets\Champions\Renata.png" />
+    <None Remove="Assets\Champions\Renekton.png" />
+    <None Remove="Assets\Champions\Rengar.png" />
+    <None Remove="Assets\Champions\Riven.png" />
+    <None Remove="Assets\Champions\Rumble.png" />
+    <None Remove="Assets\Champions\Ryze.png" />
+    <None Remove="Assets\Champions\Samira.png" />
+    <None Remove="Assets\Champions\Sejuani.png" />
+    <None Remove="Assets\Champions\Senna.png" />
+    <None Remove="Assets\Champions\Seraphine.png" />
+    <None Remove="Assets\Champions\Sett.png" />
+    <None Remove="Assets\Champions\Shaco.png" />
+    <None Remove="Assets\Champions\Shen.png" />
+    <None Remove="Assets\Champions\Shyvana.png" />
+    <None Remove="Assets\Champions\Singed.png" />
+    <None Remove="Assets\Champions\Sion.png" />
+    <None Remove="Assets\Champions\Sivir.png" />
+    <None Remove="Assets\Champions\Skarner.png" />
+    <None Remove="Assets\Champions\Smolder.png" />
+    <None Remove="Assets\Champions\Sona.png" />
+    <None Remove="Assets\Champions\Soraka.png" />
+    <None Remove="Assets\Champions\Swain.png" />
+    <None Remove="Assets\Champions\Sylas.png" />
+    <None Remove="Assets\Champions\Syndra.png" />
+    <None Remove="Assets\Champions\TahmKench.png" />
+    <None Remove="Assets\Champions\Taliyah.png" />
+    <None Remove="Assets\Champions\Talon.png" />
+    <None Remove="Assets\Champions\Taric.png" />
+    <None Remove="Assets\Champions\Teemo.png" />
+    <None Remove="Assets\Champions\Thresh.png" />
+    <None Remove="Assets\Champions\Tristana.png" />
+    <None Remove="Assets\Champions\Trundle.png" />
+    <None Remove="Assets\Champions\Tryndamere.png" />
+    <None Remove="Assets\Champions\TwistedFate.png" />
+    <None Remove="Assets\Champions\Twitch.png" />
+    <None Remove="Assets\Champions\Udyr.png" />
+    <None Remove="Assets\Champions\Urgot.png" />
+    <None Remove="Assets\Champions\Varus.png" />
+    <None Remove="Assets\Champions\Vayne.png" />
+    <None Remove="Assets\Champions\Veigar.png" />
+    <None Remove="Assets\Champions\Velkoz.png" />
+    <None Remove="Assets\Champions\Vex.png" />
+    <None Remove="Assets\Champions\Vi.png" />
+    <None Remove="Assets\Champions\Viego.png" />
+    <None Remove="Assets\Champions\Viktor.png" />
+    <None Remove="Assets\Champions\Vladimir.png" />
+    <None Remove="Assets\Champions\Volibear.png" />
+    <None Remove="Assets\Champions\Warwick.png" />
+    <None Remove="Assets\Champions\Xayah.png" />
+    <None Remove="Assets\Champions\Xerath.png" />
+    <None Remove="Assets\Champions\XinZhao.png" />
+    <None Remove="Assets\Champions\Yasuo.png" />
+    <None Remove="Assets\Champions\Yone.png" />
+    <None Remove="Assets\Champions\Yorick.png" />
+    <None Remove="Assets\Champions\Yuumi.png" />
+    <None Remove="Assets\Champions\Zac.png" />
+    <None Remove="Assets\Champions\Zed.png" />
+    <None Remove="Assets\Champions\Zeri.png" />
+    <None Remove="Assets\Champions\Ziggs.png" />
+    <None Remove="Assets\Champions\Zilean.png" />
+    <None Remove="Assets\Champions\Zoe.png" />
+    <None Remove="Assets\Champions\Zyra.png" />
+    <None Remove="Assets\Img\about.png" />
+    <None Remove="Assets\Img\arrow.png" />
+    <None Remove="Assets\Img\exit.png" />
+    <None Remove="Assets\Img\home.png" />
+    <None Remove="Assets\Img\Logo.png" />
+    <None Remove="Assets\Img\lol.png" />
+    <None Remove="Assets\Img\max_def.png" />
+    <None Remove="Assets\Img\max_mo.png" />
+    <None Remove="Assets\Img\menu_image.jpg" />
+    <None Remove="Assets\Img\settings.png" />
+    <None Remove="Assets\Img\shutdown_def.png" />
+    <None Remove="Assets\Img\shutdown_mo.png" />
+    <None Remove="Assets\Img\sword.png" />
+    <None Remove="Assets\Items\1001.png" />
+    <None Remove="Assets\Items\1004.png" />
+    <None Remove="Assets\Items\1006.png" />
+    <None Remove="Assets\Items\1011.png" />
+    <None Remove="Assets\Items\1018.png" />
+    <None Remove="Assets\Items\1026.png" />
+    <None Remove="Assets\Items\1027.png" />
+    <None Remove="Assets\Items\1028.png" />
+    <None Remove="Assets\Items\1029.png" />
+    <None Remove="Assets\Items\1031.png" />
+    <None Remove="Assets\Items\1033.png" />
+    <None Remove="Assets\Items\1035.png" />
+    <None Remove="Assets\Items\1036.png" />
+    <None Remove="Assets\Items\1037.png" />
+    <None Remove="Assets\Items\1038.png" />
+    <None Remove="Assets\Items\1039.png" />
+    <None Remove="Assets\Items\1040.png" />
+    <None Remove="Assets\Items\1042.png" />
+    <None Remove="Assets\Items\1043.png" />
+    <None Remove="Assets\Items\1052.png" />
+    <None Remove="Assets\Items\1053.png" />
+    <None Remove="Assets\Items\1054.png" />
+    <None Remove="Assets\Items\1055.png" />
+    <None Remove="Assets\Items\1056.png" />
+    <None Remove="Assets\Items\1057.png" />
+    <None Remove="Assets\Items\1058.png" />
+    <None Remove="Assets\Items\1082.png" />
+    <None Remove="Assets\Items\1083.png" />
+    <None Remove="Assets\Items\1101.png" />
+    <None Remove="Assets\Items\1102.png" />
+    <None Remove="Assets\Items\1103.png" />
+    <None Remove="Assets\Items\1104.png" />
+    <None Remove="Assets\Items\126697.png" />
+    <None Remove="Assets\Items\127008.png" />
+    <None Remove="Assets\Items\1500.png" />
+    <None Remove="Assets\Items\1501.png" />
+    <None Remove="Assets\Items\1502.png" />
+    <None Remove="Assets\Items\1503.png" />
+    <None Remove="Assets\Items\1504.png" />
+    <None Remove="Assets\Items\1506.png" />
+    <None Remove="Assets\Items\1507.png" />
+    <None Remove="Assets\Items\1508.png" />
+    <None Remove="Assets\Items\1509.png" />
+    <None Remove="Assets\Items\1510.png" />
+    <None Remove="Assets\Items\1511.png" />
+    <None Remove="Assets\Items\1512.png" />
+    <None Remove="Assets\Items\1515.png" />
+    <None Remove="Assets\Items\1516.png" />
+    <None Remove="Assets\Items\1517.png" />
+    <None Remove="Assets\Items\1518.png" />
+    <None Remove="Assets\Items\1519.png" />
+    <None Remove="Assets\Items\1520.png" />
+    <None Remove="Assets\Items\1521.png" />
+    <None Remove="Assets\Items\1522.png" />
+    <None Remove="Assets\Items\2003.png" />
+    <None Remove="Assets\Items\2010.png" />
+    <None Remove="Assets\Items\2015.png" />
+    <None Remove="Assets\Items\2019.png" />
+    <None Remove="Assets\Items\2020.png" />
+    <None Remove="Assets\Items\2021.png" />
+    <None Remove="Assets\Items\2022.png" />
+    <None Remove="Assets\Items\2031.png" />
+    <None Remove="Assets\Items\2033.png" />
+    <None Remove="Assets\Items\2049.png" />
+    <None Remove="Assets\Items\2050.png" />
+    <None Remove="Assets\Items\2051.png" />
+    <None Remove="Assets\Items\2052.png" />
+    <None Remove="Assets\Items\2055.png" />
+    <None Remove="Assets\Items\2056.png" />
+    <None Remove="Assets\Items\2065.png" />
+    <None Remove="Assets\Items\2138.png" />
+    <None Remove="Assets\Items\2139.png" />
+    <None Remove="Assets\Items\2140.png" />
+    <None Remove="Assets\Items\2141.png" />
+    <None Remove="Assets\Items\2142.png" />
+    <None Remove="Assets\Items\2143.png" />
+    <None Remove="Assets\Items\2144.png" />
+    <None Remove="Assets\Items\2145.png" />
+    <None Remove="Assets\Items\2150.png" />
+    <None Remove="Assets\Items\2151.png" />
+    <None Remove="Assets\Items\2152.png" />
+    <None Remove="Assets\Items\220000.png" />
+    <None Remove="Assets\Items\220001.png" />
+    <None Remove="Assets\Items\220002.png" />
+    <None Remove="Assets\Items\220003.png" />
+    <None Remove="Assets\Items\220004.png" />
+    <None Remove="Assets\Items\220005.png" />
+    <None Remove="Assets\Items\220006.png" />
+    <None Remove="Assets\Items\220007.png" />
+    <None Remove="Assets\Items\221011.png" />
+    <None Remove="Assets\Items\221026.png" />
+    <None Remove="Assets\Items\221031.png" />
+    <None Remove="Assets\Items\221038.png" />
+    <None Remove="Assets\Items\221043.png" />
+    <None Remove="Assets\Items\221053.png" />
+    <None Remove="Assets\Items\221057.png" />
+    <None Remove="Assets\Items\221058.png" />
+    <None Remove="Assets\Items\222022.png" />
+    <None Remove="Assets\Items\222051.png" />
+    <None Remove="Assets\Items\222065.png" />
+    <None Remove="Assets\Items\222141.png" />
+    <None Remove="Assets\Items\222502.png" />
+    <None Remove="Assets\Items\222504.png" />
+    <None Remove="Assets\Items\223001.png" />
+    <None Remove="Assets\Items\223002.png" />
+    <None Remove="Assets\Items\223003.png" />
+    <None Remove="Assets\Items\223004.png" />
+    <None Remove="Assets\Items\223005.png" />
+    <None Remove="Assets\Items\223006.png" />
+    <None Remove="Assets\Items\223009.png" />
+    <None Remove="Assets\Items\223011.png" />
+    <None Remove="Assets\Items\223020.png" />
+    <None Remove="Assets\Items\223026.png" />
+    <None Remove="Assets\Items\223031.png" />
+    <None Remove="Assets\Items\223033.png" />
+    <None Remove="Assets\Items\223036.png" />
+    <None Remove="Assets\Items\223039.png" />
+    <None Remove="Assets\Items\223040.png" />
+    <None Remove="Assets\Items\223042.png" />
+    <None Remove="Assets\Items\223046.png" />
+    <None Remove="Assets\Items\223047.png" />
+    <None Remove="Assets\Items\223050.png" />
+    <None Remove="Assets\Items\223053.png" />
+    <None Remove="Assets\Items\223057.png" />
+    <None Remove="Assets\Items\223065.png" />
+    <None Remove="Assets\Items\223067.png" />
+    <None Remove="Assets\Items\223068.png" />
+    <None Remove="Assets\Items\223071.png" />
+    <None Remove="Assets\Items\223072.png" />
+    <None Remove="Assets\Items\223073.png" />
+    <None Remove="Assets\Items\223074.png" />
+    <None Remove="Assets\Items\223075.png" />
+    <None Remove="Assets\Items\223078.png" />
+    <None Remove="Assets\Items\223084.png" />
+    <None Remove="Assets\Items\223085.png" />
+    <None Remove="Assets\Items\223087.png" />
+    <None Remove="Assets\Items\223089.png" />
+    <None Remove="Assets\Items\223091.png" />
+    <None Remove="Assets\Items\223094.png" />
+    <None Remove="Assets\Items\223095.png" />
+    <None Remove="Assets\Items\223100.png" />
+    <None Remove="Assets\Items\223102.png" />
+    <None Remove="Assets\Items\223105.png" />
+    <None Remove="Assets\Items\223107.png" />
+    <None Remove="Assets\Items\223109.png" />
+    <None Remove="Assets\Items\223110.png" />
+    <None Remove="Assets\Items\223111.png" />
+    <None Remove="Assets\Items\223112.png" />
+    <None Remove="Assets\Items\223115.png" />
+    <None Remove="Assets\Items\223116.png" />
+    <None Remove="Assets\Items\223118.png" />
+    <None Remove="Assets\Items\223119.png" />
+    <None Remove="Assets\Items\223121.png" />
+    <None Remove="Assets\Items\223124.png" />
+    <None Remove="Assets\Items\223135.png" />
+    <None Remove="Assets\Items\223137.png" />
+    <None Remove="Assets\Items\223139.png" />
+    <None Remove="Assets\Items\223142.png" />
+    <None Remove="Assets\Items\223143.png" />
+    <None Remove="Assets\Items\223146.png" />
+    <None Remove="Assets\Items\223152.png" />
+    <None Remove="Assets\Items\223153.png" />
+    <None Remove="Assets\Items\223156.png" />
+    <None Remove="Assets\Items\223157.png" />
+    <None Remove="Assets\Items\223158.png" />
+    <None Remove="Assets\Items\223161.png" />
+    <None Remove="Assets\Items\223165.png" />
+    <None Remove="Assets\Items\223172.png" />
+    <None Remove="Assets\Items\223177.png" />
+    <None Remove="Assets\Items\223181.png" />
+    <None Remove="Assets\Items\223184.png" />
+    <None Remove="Assets\Items\223185.png" />
+    <None Remove="Assets\Items\223190.png" />
+    <None Remove="Assets\Items\223193.png" />
+    <None Remove="Assets\Items\223222.png" />
+    <None Remove="Assets\Items\223302.png" />
+    <None Remove="Assets\Items\223504.png" />
+    <None Remove="Assets\Items\223508.png" />
+    <None Remove="Assets\Items\223742.png" />
+    <None Remove="Assets\Items\223748.png" />
+    <None Remove="Assets\Items\223814.png" />
+    <None Remove="Assets\Items\224004.png" />
+    <None Remove="Assets\Items\224005.png" />
+    <None Remove="Assets\Items\224401.png" />
+    <None Remove="Assets\Items\224403.png" />
+    <None Remove="Assets\Items\224628.png" />
+    <None Remove="Assets\Items\224629.png" />
+    <None Remove="Assets\Items\224633.png" />
+    <None Remove="Assets\Items\224636.png" />
+    <None Remove="Assets\Items\224637.png" />
+    <None Remove="Assets\Items\224644.png" />
+    <None Remove="Assets\Items\224645.png" />
+    <None Remove="Assets\Items\224646.png" />
+    <None Remove="Assets\Items\226035.png" />
+    <None Remove="Assets\Items\226333.png" />
+    <None Remove="Assets\Items\226609.png" />
+    <None Remove="Assets\Items\226610.png" />
+    <None Remove="Assets\Items\226616.png" />
+    <None Remove="Assets\Items\226617.png" />
+    <None Remove="Assets\Items\226620.png" />
+    <None Remove="Assets\Items\226621.png" />
+    <None Remove="Assets\Items\226630.png" />
+    <None Remove="Assets\Items\226631.png" />
+    <None Remove="Assets\Items\226632.png" />
+    <None Remove="Assets\Items\226653.png" />
+    <None Remove="Assets\Items\226655.png" />
+    <None Remove="Assets\Items\226656.png" />
+    <None Remove="Assets\Items\226657.png" />
+    <None Remove="Assets\Items\226662.png" />
+    <None Remove="Assets\Items\226664.png" />
+    <None Remove="Assets\Items\226665.png" />
+    <None Remove="Assets\Items\226667.png" />
+    <None Remove="Assets\Items\226671.png" />
+    <None Remove="Assets\Items\226672.png" />
+    <None Remove="Assets\Items\226673.png" />
+    <None Remove="Assets\Items\226675.png" />
+    <None Remove="Assets\Items\226676.png" />
+    <None Remove="Assets\Items\226691.png" />
+    <None Remove="Assets\Items\226692.png" />
+    <None Remove="Assets\Items\226693.png" />
+    <None Remove="Assets\Items\226694.png" />
+    <None Remove="Assets\Items\226695.png" />
+    <None Remove="Assets\Items\226696.png" />
+    <None Remove="Assets\Items\226697.png" />
+    <None Remove="Assets\Items\226698.png" />
+    <None Remove="Assets\Items\226699.png" />
+    <None Remove="Assets\Items\226701.png" />
+    <None Remove="Assets\Items\227001.png" />
+    <None Remove="Assets\Items\227002.png" />
+    <None Remove="Assets\Items\227005.png" />
+    <None Remove="Assets\Items\227006.png" />
+    <None Remove="Assets\Items\227009.png" />
+    <None Remove="Assets\Items\227010.png" />
+    <None Remove="Assets\Items\227011.png" />
+    <None Remove="Assets\Items\227012.png" />
+    <None Remove="Assets\Items\227013.png" />
+    <None Remove="Assets\Items\227014.png" />
+    <None Remove="Assets\Items\227015.png" />
+    <None Remove="Assets\Items\227016.png" />
+    <None Remove="Assets\Items\227017.png" />
+    <None Remove="Assets\Items\227018.png" />
+    <None Remove="Assets\Items\227019.png" />
+    <None Remove="Assets\Items\227020.png" />
+    <None Remove="Assets\Items\227021.png" />
+    <None Remove="Assets\Items\227023.png" />
+    <None Remove="Assets\Items\227024.png" />
+    <None Remove="Assets\Items\227025.png" />
+    <None Remove="Assets\Items\227026.png" />
+    <None Remove="Assets\Items\227027.png" />
+    <None Remove="Assets\Items\227028.png" />
+    <None Remove="Assets\Items\227029.png" />
+    <None Remove="Assets\Items\227030.png" />
+    <None Remove="Assets\Items\227031.png" />
+    <None Remove="Assets\Items\227032.png" />
+    <None Remove="Assets\Items\227033.png" />
+    <None Remove="Assets\Items\228001.png" />
+    <None Remove="Assets\Items\228002.png" />
+    <None Remove="Assets\Items\228003.png" />
+    <None Remove="Assets\Items\228004.png" />
+    <None Remove="Assets\Items\228005.png" />
+    <None Remove="Assets\Items\228006.png" />
+    <None Remove="Assets\Items\228008.png" />
+    <None Remove="Assets\Items\228020.png" />
+    <None Remove="Assets\Items\2403.png" />
+    <None Remove="Assets\Items\2419.png" />
+    <None Remove="Assets\Items\2420.png" />
+    <None Remove="Assets\Items\2421.png" />
+    <None Remove="Assets\Items\2422.png" />
+    <None Remove="Assets\Items\2423.png" />
+    <None Remove="Assets\Items\2502.png" />
+    <None Remove="Assets\Items\2504.png" />
+    <None Remove="Assets\Items\3001.png" />
+    <None Remove="Assets\Items\3002.png" />
+    <None Remove="Assets\Items\3003.png" />
+    <None Remove="Assets\Items\3004.png" />
+    <None Remove="Assets\Items\3005.png" />
+    <None Remove="Assets\Items\3006.png" />
+    <None Remove="Assets\Items\3009.png" />
+    <None Remove="Assets\Items\3011.png" />
+    <None Remove="Assets\Items\3012.png" />
+    <None Remove="Assets\Items\3020.png" />
+    <None Remove="Assets\Items\3023.png" />
+    <None Remove="Assets\Items\3024.png" />
+    <None Remove="Assets\Items\3026.png" />
+    <None Remove="Assets\Items\3031.png" />
+    <None Remove="Assets\Items\3033.png" />
+    <None Remove="Assets\Items\3035.png" />
+    <None Remove="Assets\Items\3036.png" />
+    <None Remove="Assets\Items\3039.png" />
+    <None Remove="Assets\Items\3040.png" />
+    <None Remove="Assets\Items\3041.png" />
+    <None Remove="Assets\Items\3042.png" />
+    <None Remove="Assets\Items\3044.png" />
+    <None Remove="Assets\Items\3046.png" />
+    <None Remove="Assets\Items\3047.png" />
+    <None Remove="Assets\Items\3050.png" />
+    <None Remove="Assets\Items\3051.png" />
+    <None Remove="Assets\Items\3053.png" />
+    <None Remove="Assets\Items\3057.png" />
+    <None Remove="Assets\Items\3065.png" />
+    <None Remove="Assets\Items\3066.png" />
+    <None Remove="Assets\Items\3067.png" />
+    <None Remove="Assets\Items\3068.png" />
+    <None Remove="Assets\Items\3070.png" />
+    <None Remove="Assets\Items\3071.png" />
+    <None Remove="Assets\Items\3072.png" />
+    <None Remove="Assets\Items\3073.png" />
+    <None Remove="Assets\Items\3074.png" />
+    <None Remove="Assets\Items\3075.png" />
+    <None Remove="Assets\Items\3076.png" />
+    <None Remove="Assets\Items\3077.png" />
+    <None Remove="Assets\Items\3078.png" />
+    <None Remove="Assets\Items\3082.png" />
+    <None Remove="Assets\Items\3083.png" />
+    <None Remove="Assets\Items\3084.png" />
+    <None Remove="Assets\Items\3085.png" />
+    <None Remove="Assets\Items\3086.png" />
+    <None Remove="Assets\Items\3087.png" />
+    <None Remove="Assets\Items\3089.png" />
+    <None Remove="Assets\Items\3091.png" />
+    <None Remove="Assets\Items\3094.png" />
+    <None Remove="Assets\Items\3095.png" />
+    <None Remove="Assets\Items\3100.png" />
+    <None Remove="Assets\Items\3102.png" />
+    <None Remove="Assets\Items\3105.png" />
+    <None Remove="Assets\Items\3107.png" />
+    <None Remove="Assets\Items\3108.png" />
+    <None Remove="Assets\Items\3109.png" />
+    <None Remove="Assets\Items\3110.png" />
+    <None Remove="Assets\Items\3111.png" />
+    <None Remove="Assets\Items\3112.png" />
+    <None Remove="Assets\Items\3113.png" />
+    <None Remove="Assets\Items\3114.png" />
+    <None Remove="Assets\Items\3115.png" />
+    <None Remove="Assets\Items\3116.png" />
+    <None Remove="Assets\Items\3117.png" />
+    <None Remove="Assets\Items\3118.png" />
+    <None Remove="Assets\Items\3119.png" />
+    <None Remove="Assets\Items\3121.png" />
+    <None Remove="Assets\Items\3123.png" />
+    <None Remove="Assets\Items\3124.png" />
+    <None Remove="Assets\Items\3128.png" />
+    <None Remove="Assets\Items\3131.png" />
+    <None Remove="Assets\Items\3133.png" />
+    <None Remove="Assets\Items\3134.png" />
+    <None Remove="Assets\Items\3135.png" />
+    <None Remove="Assets\Items\3137.png" />
+    <None Remove="Assets\Items\3139.png" />
+    <None Remove="Assets\Items\3140.png" />
+    <None Remove="Assets\Items\3142.png" />
+    <None Remove="Assets\Items\3143.png" />
+    <None Remove="Assets\Items\3145.png" />
+    <None Remove="Assets\Items\3146.png" />
+    <None Remove="Assets\Items\3147.png" />
+    <None Remove="Assets\Items\3152.png" />
+    <None Remove="Assets\Items\3153.png" />
+    <None Remove="Assets\Items\3155.png" />
+    <None Remove="Assets\Items\3156.png" />
+    <None Remove="Assets\Items\3157.png" />
+    <None Remove="Assets\Items\3158.png" />
+    <None Remove="Assets\Items\3161.png" />
+    <None Remove="Assets\Items\3165.png" />
+    <None Remove="Assets\Items\3172.png" />
+    <None Remove="Assets\Items\3177.png" />
+    <None Remove="Assets\Items\3179.png" />
+    <None Remove="Assets\Items\3181.png" />
+    <None Remove="Assets\Items\3184.png" />
+    <None Remove="Assets\Items\3190.png" />
+    <None Remove="Assets\Items\3193.png" />
+    <None Remove="Assets\Items\3211.png" />
+    <None Remove="Assets\Items\3222.png" />
+    <None Remove="Assets\Items\3302.png" />
+    <None Remove="Assets\Items\3330.png" />
+    <None Remove="Assets\Items\3340.png" />
+    <None Remove="Assets\Items\3348.png" />
+    <None Remove="Assets\Items\3349.png" />
+    <None Remove="Assets\Items\3363.png" />
+    <None Remove="Assets\Items\3364.png" />
+    <None Remove="Assets\Items\3400.png" />
+    <None Remove="Assets\Items\3430.png" />
+    <None Remove="Assets\Items\3504.png" />
+    <None Remove="Assets\Items\3508.png" />
+    <None Remove="Assets\Items\3513.png" />
+    <None Remove="Assets\Items\3599.png" />
+    <None Remove="Assets\Items\3600.png" />
+    <None Remove="Assets\Items\3742.png" />
+    <None Remove="Assets\Items\3748.png" />
+    <None Remove="Assets\Items\3801.png" />
+    <None Remove="Assets\Items\3802.png" />
+    <None Remove="Assets\Items\3803.png" />
+    <None Remove="Assets\Items\3814.png" />
+    <None Remove="Assets\Items\3850.png" />
+    <None Remove="Assets\Items\3851.png" />
+    <None Remove="Assets\Items\3853.png" />
+    <None Remove="Assets\Items\3854.png" />
+    <None Remove="Assets\Items\3855.png" />
+    <None Remove="Assets\Items\3857.png" />
+    <None Remove="Assets\Items\3858.png" />
+    <None Remove="Assets\Items\3859.png" />
+    <None Remove="Assets\Items\3860.png" />
+    <None Remove="Assets\Items\3862.png" />
+    <None Remove="Assets\Items\3863.png" />
+    <None Remove="Assets\Items\3864.png" />
+    <None Remove="Assets\Items\3865.png" />
+    <None Remove="Assets\Items\3866.png" />
+    <None Remove="Assets\Items\3867.png" />
+    <None Remove="Assets\Items\3869.png" />
+    <None Remove="Assets\Items\3870.png" />
+    <None Remove="Assets\Items\3871.png" />
+    <None Remove="Assets\Items\3876.png" />
+    <None Remove="Assets\Items\3877.png" />
+    <None Remove="Assets\Items\3901.png" />
+    <None Remove="Assets\Items\3902.png" />
+    <None Remove="Assets\Items\3903.png" />
+    <None Remove="Assets\Items\3916.png" />
+    <None Remove="Assets\Items\4003.png" />
+    <None Remove="Assets\Items\4004.png" />
+    <None Remove="Assets\Items\4005.png" />
+    <None Remove="Assets\Items\4010.png" />
+    <None Remove="Assets\Items\4011.png" />
+    <None Remove="Assets\Items\4012.png" />
+    <None Remove="Assets\Items\4013.png" />
+    <None Remove="Assets\Items\4014.png" />
+    <None Remove="Assets\Items\4015.png" />
+    <None Remove="Assets\Items\4016.png" />
+    <None Remove="Assets\Items\4017.png" />
+    <None Remove="Assets\Items\4401.png" />
+    <None Remove="Assets\Items\4402.png" />
+    <None Remove="Assets\Items\4403.png" />
+    <None Remove="Assets\Items\443054.png" />
+    <None Remove="Assets\Items\443055.png" />
+    <None Remove="Assets\Items\443056.png" />
+    <None Remove="Assets\Items\443058.png" />
+    <None Remove="Assets\Items\443059.png" />
+    <None Remove="Assets\Items\443060.png" />
+    <None Remove="Assets\Items\443061.png" />
+    <None Remove="Assets\Items\443062.png" />
+    <None Remove="Assets\Items\443063.png" />
+    <None Remove="Assets\Items\443064.png" />
+    <None Remove="Assets\Items\443069.png" />
+    <None Remove="Assets\Items\443079.png" />
+    <None Remove="Assets\Items\443193.png" />
+    <None Remove="Assets\Items\444636.png" />
+    <None Remove="Assets\Items\444637.png" />
+    <None Remove="Assets\Items\444644.png" />
+    <None Remove="Assets\Items\446632.png" />
+    <None Remove="Assets\Items\446656.png" />
+    <None Remove="Assets\Items\446667.png" />
+    <None Remove="Assets\Items\446671.png" />
+    <None Remove="Assets\Items\446691.png" />
+    <None Remove="Assets\Items\446693.png" />
+    <None Remove="Assets\Items\447100.png" />
+    <None Remove="Assets\Items\447101.png" />
+    <None Remove="Assets\Items\447102.png" />
+    <None Remove="Assets\Items\447103.png" />
+    <None Remove="Assets\Items\447104.png" />
+    <None Remove="Assets\Items\447105.png" />
+    <None Remove="Assets\Items\447106.png" />
+    <None Remove="Assets\Items\447107.png" />
+    <None Remove="Assets\Items\447108.png" />
+    <None Remove="Assets\Items\447109.png" />
+    <None Remove="Assets\Items\447110.png" />
+    <None Remove="Assets\Items\447111.png" />
+    <None Remove="Assets\Items\447112.png" />
+    <None Remove="Assets\Items\447113.png" />
+    <None Remove="Assets\Items\4628.png" />
+    <None Remove="Assets\Items\4629.png" />
+    <None Remove="Assets\Items\4630.png" />
+    <None Remove="Assets\Items\4632.png" />
+    <None Remove="Assets\Items\4633.png" />
+    <None Remove="Assets\Items\4635.png" />
+    <None Remove="Assets\Items\4636.png" />
+    <None Remove="Assets\Items\4637.png" />
+    <None Remove="Assets\Items\4638.png" />
+    <None Remove="Assets\Items\4641.png" />
+    <None Remove="Assets\Items\4642.png" />
+    <None Remove="Assets\Items\4643.png" />
+    <None Remove="Assets\Items\4644.png" />
+    <None Remove="Assets\Items\4645.png" />
+    <None Remove="Assets\Items\4646.png" />
+    <None Remove="Assets\Items\6029.png" />
+    <None Remove="Assets\Items\6035.png" />
+    <None Remove="Assets\Items\6333.png" />
+    <None Remove="Assets\Items\6609.png" />
+    <None Remove="Assets\Items\6610.png" />
+    <None Remove="Assets\Items\6616.png" />
+    <None Remove="Assets\Items\6617.png" />
+    <None Remove="Assets\Items\6620.png" />
+    <None Remove="Assets\Items\6621.png" />
+    <None Remove="Assets\Items\6630.png" />
+    <None Remove="Assets\Items\6631.png" />
+    <None Remove="Assets\Items\6632.png" />
+    <None Remove="Assets\Items\6653.png" />
+    <None Remove="Assets\Items\6655.png" />
+    <None Remove="Assets\Items\6656.png" />
+    <None Remove="Assets\Items\6657.png" />
+    <None Remove="Assets\Items\6660.png" />
+    <None Remove="Assets\Items\6662.png" />
+    <None Remove="Assets\Items\6664.png" />
+    <None Remove="Assets\Items\6665.png" />
+    <None Remove="Assets\Items\6667.png" />
+    <None Remove="Assets\Items\6670.png" />
+    <None Remove="Assets\Items\6671.png" />
+    <None Remove="Assets\Items\6672.png" />
+    <None Remove="Assets\Items\6673.png" />
+    <None Remove="Assets\Items\6675.png" />
+    <None Remove="Assets\Items\6676.png" />
+    <None Remove="Assets\Items\6677.png" />
+    <None Remove="Assets\Items\6690.png" />
+    <None Remove="Assets\Items\6691.png" />
+    <None Remove="Assets\Items\6692.png" />
+    <None Remove="Assets\Items\6693.png" />
+    <None Remove="Assets\Items\6694.png" />
+    <None Remove="Assets\Items\6695.png" />
+    <None Remove="Assets\Items\6696.png" />
+    <None Remove="Assets\Items\6697.png" />
+    <None Remove="Assets\Items\6698.png" />
+    <None Remove="Assets\Items\6699.png" />
+    <None Remove="Assets\Items\6700.png" />
+    <None Remove="Assets\Items\6701.png" />
+    <None Remove="Assets\Items\7000.png" />
+    <None Remove="Assets\Items\7001.png" />
+    <None Remove="Assets\Items\7002.png" />
+    <None Remove="Assets\Items\7003.png" />
+    <None Remove="Assets\Items\7004.png" />
+    <None Remove="Assets\Items\7005.png" />
+    <None Remove="Assets\Items\7006.png" />
+    <None Remove="Assets\Items\7007.png" />
+    <None Remove="Assets\Items\7008.png" />
+    <None Remove="Assets\Items\7009.png" />
+    <None Remove="Assets\Items\7010.png" />
+    <None Remove="Assets\Items\7011.png" />
+    <None Remove="Assets\Items\7012.png" />
+    <None Remove="Assets\Items\7013.png" />
+    <None Remove="Assets\Items\7014.png" />
+    <None Remove="Assets\Items\7015.png" />
+    <None Remove="Assets\Items\7016.png" />
+    <None Remove="Assets\Items\7017.png" />
+    <None Remove="Assets\Items\7018.png" />
+    <None Remove="Assets\Items\7019.png" />
+    <None Remove="Assets\Items\7020.png" />
+    <None Remove="Assets\Items\7021.png" />
+    <None Remove="Assets\Items\7022.png" />
+    <None Remove="Assets\Items\7023.png" />
+    <None Remove="Assets\Items\7024.png" />
+    <None Remove="Assets\Items\7025.png" />
+    <None Remove="Assets\Items\7026.png" />
+    <None Remove="Assets\Items\7027.png" />
+    <None Remove="Assets\Items\7028.png" />
+    <None Remove="Assets\Items\7029.png" />
+    <None Remove="Assets\Items\7030.png" />
+    <None Remove="Assets\Items\7031.png" />
+    <None Remove="Assets\Items\7032.png" />
+    <None Remove="Assets\Items\7033.png" />
+    <None Remove="Assets\Items\7034.png" />
+    <None Remove="Assets\Items\7035.png" />
+    <None Remove="Assets\Items\7036.png" />
+    <None Remove="Assets\Items\7037.png" />
+    <None Remove="Assets\Items\7038.png" />
+    <None Remove="Assets\Items\7039.png" />
+    <None Remove="Assets\Items\7040.png" />
+    <None Remove="Assets\Items\7041.png" />
+    <None Remove="Assets\Items\7042.png" />
+    <None Remove="Assets\Items\7050.png" />
+    <None Remove="Assets\Items\8001.png" />
+    <None Remove="Assets\Items\8020.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Champions\Aatrox.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Ahri.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Akali.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Akshan.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Alistar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Amumu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Anivia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Annie.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Aphelios.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Ashe.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\AurelionSol.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Azir.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Bard.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Belveth.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Blitzcrank.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Brand.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Braum.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Briar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Caitlyn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Camille.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Cassiopeia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Chogath.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Corki.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Darius.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Diana.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Draven.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\DrMundo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Ekko.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Elise.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Evelynn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Ezreal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Fiddlesticks.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Fiora.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Fizz.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Galio.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Gangplank.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Garen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Gnar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Gragas.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Graves.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Gwen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Hecarim.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Heimerdinger.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Hwei.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Illaoi.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Irelia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Ivern.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Janna.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\JarvanIV.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Jax.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Jayce.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Jhin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Jinx.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Kaisa.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Kalista.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Karma.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Karthus.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Kassadin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Katarina.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Kayle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Kayn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Kennen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Khazix.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Kindred.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Kled.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\KogMaw.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\KSante.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Leblanc.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\LeeSin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Leona.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Lillia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Lissandra.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Lucian.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Lulu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Lux.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Malphite.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Malzahar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Maokai.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\MasterYi.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Milio.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\MissFortune.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\MonkeyKing.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Mordekaiser.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Morgana.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Naafiri.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Nami.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Nasus.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Nautilus.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Neeko.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Nidalee.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Nilah.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Nocturne.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Nunu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Olaf.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Orianna.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Ornn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Pantheon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Poppy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Pyke.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Qiyana.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Quinn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Rakan.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Rammus.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\RekSai.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Rell.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Renata.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Renekton.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Rengar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Riven.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Rumble.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Ryze.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Samira.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Sejuani.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Senna.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Seraphine.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Sett.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Shaco.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Shen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Shyvana.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Singed.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Sion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Sivir.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Skarner.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Smolder.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Sona.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Soraka.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Swain.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Sylas.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Syndra.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\TahmKench.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Taliyah.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Talon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Taric.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Teemo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Thresh.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Tristana.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Trundle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Tryndamere.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\TwistedFate.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Twitch.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Udyr.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Urgot.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Varus.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Vayne.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Veigar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Velkoz.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Vex.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Vi.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Viego.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Viktor.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Vladimir.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Volibear.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Warwick.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Xayah.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Xerath.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\XinZhao.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Yasuo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Yone.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Yorick.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Yuumi.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Zac.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Zed.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Zeri.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Ziggs.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Zilean.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Zoe.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Champions\Zyra.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Img\about.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Img\arrow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Img\exit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Img\home.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Img\Logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Img\lol.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Img\max_def.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Img\max_mo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Img\menu_image.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Img\settings.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Img\shutdown_def.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Img\shutdown_mo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Img\sword.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1001.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1004.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1006.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1011.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1018.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1026.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1027.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1028.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1029.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1031.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1033.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1035.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1036.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1037.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1038.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1039.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1040.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1042.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1043.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1052.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1053.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1054.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1055.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1056.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1057.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1058.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1082.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1083.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1101.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1102.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1103.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1104.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\126697.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\127008.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1500.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1501.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1502.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1503.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1504.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1506.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1507.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1508.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1509.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1510.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1511.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1512.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1515.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1516.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1517.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1518.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1519.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1520.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1521.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\1522.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2003.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2010.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2015.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2019.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2020.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2021.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2022.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2031.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2033.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2049.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2050.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2051.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2052.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2055.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2056.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2065.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2138.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2139.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2140.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2141.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2142.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2143.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2144.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2145.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2150.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2151.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2152.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\220000.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\220001.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\220002.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\220003.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\220004.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\220005.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\220006.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\220007.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\221011.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\221026.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\221031.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\221038.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\221043.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\221053.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\221057.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\221058.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\222022.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\222051.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\222065.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\222141.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\222502.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\222504.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223001.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223002.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223003.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223004.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223005.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223006.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223009.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223011.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223020.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223026.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223031.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223033.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223036.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223039.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223040.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223042.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223046.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223047.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223050.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223053.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223057.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223065.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223067.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223068.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223071.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223072.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223073.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223074.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223075.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223078.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223084.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223085.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223087.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223089.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223091.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223094.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223095.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223100.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223102.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223105.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223107.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223109.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223110.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223111.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223112.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223115.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223116.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223118.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223119.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223121.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223124.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223135.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223137.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223139.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223142.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223143.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223146.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223152.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223153.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223156.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223157.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223158.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223161.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223165.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223172.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223177.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223181.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223184.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223185.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223190.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223193.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223222.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223302.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223504.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223508.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223742.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223748.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\223814.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\224004.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\224005.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\224401.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\224403.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\224628.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\224629.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\224633.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\224636.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\224637.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\224644.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\224645.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\224646.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226035.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226333.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226609.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226610.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226616.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226617.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226620.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226621.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226630.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226631.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226632.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226653.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226655.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226656.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226657.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226662.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226664.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226665.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226667.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226671.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226672.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226673.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226675.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226676.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226691.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226692.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226693.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226694.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226695.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226696.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226697.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226698.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226699.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\226701.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\227001.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\227002.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\227005.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\227006.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\227009.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\227010.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\227011.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\227012.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\227013.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\227014.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\227015.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\227016.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\227017.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\227018.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\227019.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\227020.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\227021.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\227023.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\227024.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\227025.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\227026.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\227027.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\227028.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\227029.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\227030.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\227031.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\227032.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\227033.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\228001.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\228002.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\228003.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\228004.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\228005.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\228006.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\228008.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\228020.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2403.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2419.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2420.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2421.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2422.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2423.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2502.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\2504.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3001.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3002.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3003.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3004.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3005.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3006.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3009.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3011.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3012.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3020.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3023.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3024.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3026.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3031.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3033.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3035.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3036.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3039.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3040.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3041.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3042.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3044.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3046.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3047.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3050.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3051.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3053.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3057.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3065.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3066.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3067.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3068.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3070.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3071.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3072.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3073.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3074.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3075.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3076.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3077.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3078.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3082.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3083.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3084.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3085.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3086.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3087.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3089.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3091.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3094.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3095.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3100.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3102.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3105.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3107.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3108.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3109.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3110.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3111.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3112.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3113.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3114.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3115.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3116.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3117.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3118.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3119.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3121.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3123.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3124.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3128.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3131.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3133.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3134.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3135.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3137.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3139.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3140.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3142.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3143.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3145.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3146.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3147.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3152.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3153.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3155.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3156.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3157.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3158.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3161.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3165.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3172.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3177.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3179.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3181.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3184.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3190.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3193.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3211.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3222.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3302.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3330.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3340.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3348.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3349.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3363.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3364.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3400.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3430.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3504.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3508.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3513.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3599.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3600.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3742.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3748.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3801.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3802.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3803.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3814.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3850.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3851.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3853.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3854.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3855.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3857.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3858.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3859.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3860.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3862.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3863.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3864.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3865.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3866.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3867.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3869.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3870.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3871.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3876.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3877.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3901.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3902.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3903.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\3916.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4003.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4004.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4005.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4010.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4011.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4012.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4013.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4014.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4015.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4016.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4017.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4401.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4402.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4403.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\443054.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\443055.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\443056.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\443058.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\443059.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\443060.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\443061.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\443062.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\443063.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\443064.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\443069.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\443079.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\443193.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\444636.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\444637.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\444644.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\446632.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\446656.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\446667.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\446671.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\446691.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\446693.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\447100.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\447101.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\447102.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\447103.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\447104.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\447105.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\447106.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\447107.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\447108.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\447109.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\447110.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\447111.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\447112.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\447113.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4628.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4629.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4630.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4632.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4633.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4635.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4636.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4637.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4638.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4641.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4642.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4643.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4644.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4645.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\4646.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6029.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6035.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6333.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6609.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6610.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6616.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6617.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6620.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6621.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6630.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6631.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6632.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6653.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6655.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6656.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6657.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6660.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6662.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6664.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6665.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6667.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6670.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6671.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6672.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6673.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6675.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6676.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6677.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6690.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6691.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6692.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6693.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6694.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6695.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6696.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6697.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6698.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6699.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6700.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\6701.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7000.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7001.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7002.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7003.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7004.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7005.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7006.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7007.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7008.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7009.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7010.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7011.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7012.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7013.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7014.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7015.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7016.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7017.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7018.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7019.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7020.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7021.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7022.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7023.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7024.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7025.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7026.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7027.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7028.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7029.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7030.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7031.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7032.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7033.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7034.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7035.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7036.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7037.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7038.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7039.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7040.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7041.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7042.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\7050.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\8001.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Items\8020.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>

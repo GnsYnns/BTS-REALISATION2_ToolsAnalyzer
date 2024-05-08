@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolsAnalyzer", "ToolsAnalyzer.csproj", "{403E0A6D-B9CA-4678-BDC9-4E6A6B5A5B71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{403E0A6D-B9CA-4678-BDC9-4E6A6B5A5B71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{403E0A6D-B9CA-4678-BDC9-4E6A6B5A5B71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{403E0A6D-B9CA-4678-BDC9-4E6A6B5A5B71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{403E0A6D-B9CA-4678-BDC9-4E6A6B5A5B71}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59C7ED6D-EA4D-4071-BEE7-2DA79FE4C9D1}
+	EndGlobalSection
+EndGlobal
