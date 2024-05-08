@@ -4,37 +4,37 @@
 
 ## Introduction
 
-Ce projet a été réalisé dans le cadre de ma formation en développement d'applications .Net. L'objectif principal était de créer un outil analytique pour aider les coachs de LoL à analyser les performances des personnages et à améliorer leurs stratégies de jeu, en utilisant des données préexistantes sur les personnages.
+Ce projet a Ã©tÃ© rÃ©alisÃ© dans le cadre de ma formation en dÃ©veloppement d'applications .Net. L'objectif principal Ã©tait de crÃ©er un outil analytique pour aider les coachs de LoL Ã  analyser les performances des personnages et Ã  amÃ©liorer leurs stratÃ©gies de jeu, en utilisant des donnÃ©es prÃ©existantes sur les personnages.
 
 ## Conception de l'Interface Utilisateur
 
-L'interface utilisateur a été conçue en utilisant WPF (Windows Presentation Foundation) pour offrir une expérience riche et interactive. Le langage XAML a été utilisé pour la mise en page et la liaison de données, permettant une séparation claire entre la logique métier et l'interface utilisateur.
+L'interface utilisateur a Ã©tÃ© conÃ§ue en utilisant WPF (Windows Presentation Foundation) pour offrir une expÃ©rience riche et interactive. Le langage XAML a Ã©tÃ© utilisÃ© pour la mise en page et la liaison de donnÃ©es, permettant une sÃ©paration claire entre la logique mÃ©tier et l'interface utilisateur.
 
-## Développement
+## DÃ©veloppement
 
-Le développement a été réalisé en C#, avec une attention particulière portée à la logique métier et à la manipulation des données. Les fonctionnalités principales incluent le calcul des statistiques clés (comme l’armure, les dégâts, etc.) sur des personnages de LoL déjà intégrés dans l'application. Des fonctionnalités de recherche, de filtrage, et d'exportation des données ont également été implémentées.
+Le dÃ©veloppement a Ã©tÃ© rÃ©alisÃ© en C#, avec une attention particuliÃ¨re portÃ©e Ã  la logique mÃ©tier et Ã  la manipulation des donnÃ©es. Les fonctionnalitÃ©s principales incluent le calcul des statistiques clÃ©s (comme lâ€™armure, les dÃ©gÃ¢ts, etc.) sur des personnages de LoL dÃ©jÃ  intÃ©grÃ©s dans l'application. Des fonctionnalitÃ©s de recherche, de filtrage, et d'exportation des donnÃ©es ont Ã©galement Ã©tÃ© implÃ©mentÃ©es.
 
 ## Tests
 
-Des tests unitaires et fonctionnels ont été effectués pour s'assurer que l'application fonctionne comme prévu. L'application a été testée sur différents navigateurs et appareils pour garantir sa compatibilité et sa performance.
+Des tests unitaires et fonctionnels ont Ã©tÃ© effectuÃ©s pour s'assurer que l'application fonctionne comme prÃ©vu. L'application a Ã©tÃ© testÃ©e sur diffÃ©rents navigateurs et appareils pour garantir sa compatibilitÃ© et sa performance.
 
-## Déploiement
+## DÃ©ploiement
 
-L'application a été déployée sur un serveur de production, en utilisant Git pour le déploiement continu. Un environnement de production a été configuré avec IIS (Internet Information Services) et SQL Server pour la gestion de la base de données.
+L'application a Ã©tÃ© dÃ©ployÃ©e sur un serveur de production, en utilisant Git pour le dÃ©ploiement continu. Un environnement de production a Ã©tÃ© configurÃ© avec IIS (Internet Information Services) et SQL Server pour la gestion de la base de donnÃ©es.
 
 ## Structure du Projet
 
 ### Ressources Fournies
 
 - Documentation .Net
-- Accès à un environnement de développement (Visual Studio)
-- Données préexistantes sur les personnages de LoL
+- AccÃ¨s Ã  un environnement de dÃ©veloppement (Visual Studio)
+- DonnÃ©es prÃ©existantes sur les personnages de LoL
 
-### Résultats Attendus
+### RÃ©sultats Attendus
 
-L'application WPF développée permet aux utilisateurs de calculer des statistiques clés sur des personnages de LoL déjà intégrés dans l'application. Elle inclut des fonctionnalités de recherche, de filtrage, et d'exportation des données.
+L'application WPF dÃ©veloppÃ©e permet aux utilisateurs de calculer des statistiques clÃ©s sur des personnages de LoL dÃ©jÃ  intÃ©grÃ©s dans l'application. Elle inclut des fonctionnalitÃ©s de recherche et de filtrage.
 
-### Environnement de Développement
+### Environnement de DÃ©veloppement
 
 - .Net Framework 4.8
 - Visual Studio 2019
@@ -44,6 +44,6 @@ L'application WPF développée permet aux utilisateurs de calculer des statistique
 
 - Git (Github)
 
-### Base de Données
+### Base de DonnÃ©es
 
 - MySQL
